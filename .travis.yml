@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-  - docker run petorian/docker-react npm run test -- --coverage
+  - docker run -e CI=true petorian/docker-react npm run test
